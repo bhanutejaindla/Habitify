@@ -1,0 +1,71 @@
+
+.view-progress {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .view-progress h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+
+  .view-progress h3 {
+    font-size: 1.5rem;
+    color: #4caf50;
+    margin-top: 20px;
+    border-bottom: 2px solid #4caf50;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+  
+  
+  .daily-progress {
+    margin-bottom: 20px;
+  }
+  
+  .daily-progress div {
+    margin-bottom: 8px;
+  }
+  
+  .daily-progress strong {
+    font-weight: bold;
+  }
+  
+  .daily-progress .completed {
+    color: green;
+  }
+  
+  .daily-progress .not-completed {
+    color: red;
+  }
+  
+
+  .progress-summary {
+    margin-bottom: 30px;
+  }
+  
+  .progress-summary p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+
+  .streaks {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px solid #ddd;
+  }
+  
+  .streaks p {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  

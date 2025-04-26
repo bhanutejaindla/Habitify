@@ -1,0 +1,162 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5fdf8; 
+  margin: 0;
+  padding: 0;
+}
+
+.habit-tracker {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(179, 145, 145, 0.368);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.add-habit {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.add-habit input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-habit button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #28a745; 
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-habit button:hover {
+  background-color: #218838; 
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1.5fr repeat(7, 1fr) 1fr 1fr;
+  font-weight: bold;
+  text-align: center;
+  background-color: #e9ecef;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.header-cell {
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+
+.habit-row {
+  display: grid;
+  grid-template-columns: 1.5fr repeat(7, 1fr) 1fr 1fr;
+  align-items: center;
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.wrapper {
+  width: 160px;
+  display: flex;
+  flex-direction: 'row';
+  align-items: center;
+  gap:'25px';
+}
+
+.habit-name {
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.remove-btn {
+  width: 20px;
+  height: 20px;;
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+  flex-shrink: 0;
+}
+
+.remove-btn:hover {
+}
+
+
+.habit-cell {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.habit-cell.completed {
+  background-color: #28a745; 
+  color: white;
+}
+
+.habit-cell.not-completed {
+  background-color: #f8d7da; 
+  color: #721c24; 
+}
+
+
+.habit-streak,
+.habit-longest {
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #e9ecef; 
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.habit-cell:hover {
+  background-color: #e2e6ea; 
+}
+
+.habit-row:hover {
+  background-color: #f1f1f1; 
+}
+
+
+@media (max-width: 768px) {
+  .header,
+  .habit-row {
+    grid-template-columns: 1.5fr repeat(3, 1fr) 1fr 1fr;
+  }
+
+  .habit-name {
+    font-size: 14px;
+  }
+
+  .habit-cell {
+    height: 30px;
+  }
+}
+
+

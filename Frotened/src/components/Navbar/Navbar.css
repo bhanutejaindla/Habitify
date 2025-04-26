@@ -1,0 +1,37 @@
+.header{
+    margin: 0px;
+    padding: 15px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #e5e5e5;
+    font-family: Arial,sans-serif;
+}
+
+.navbar-links{
+    display: flex;
+    align-items: center;
+    flex-direction:row;
+    padding: 5px;
+    gap: 10px;
+    
+}
+
+.navbar-link{
+    text-decoration: none;
+    font-size: 16px;
+    color:#2c3e50;
+    padding: 5px 10px;
+    transition: color 0.3s ease,border-bottom 0.3s ease;
+}
+.navbar-link:hover{
+    color:#8a9a5b;
+}
+
+button{
+    border: none;
+    border-radius: 10px;
+    background-color: palegreen;
+    cursor: pointer;
+}
+
+
+
